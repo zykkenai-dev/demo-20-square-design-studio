@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>20 Square Design Studio · Architecture, Interiors & Construction · Gurugram</title>
+<meta name="description" content="Architects, interior designers and builders in New Palam Vihar, Gurugram. Residential, commercial, institutional and retail projects across North India.">
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#ecebe7;--ink:#151514;--ink2:#64625d;--line:#cfccc5;--ochre:#b07a2a;--paper:#f6f5f2}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Satoshi,system-ui,sans-serif;background:var(--bg);color:var(--ink);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1320px;margin:0 auto;padding:0 32px}
+header{position:absolute;top:0;left:0;right:0;z-index:5;color:#fff}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:84px}
+.logo{font-weight:700;font-size:19px;letter-spacing:-.02em;display:flex;align-items:center;gap:12px}
+.sq{width:22px;height:22px;border:2px solid currentColor;position:relative}
+.sq::after{content:"";position:absolute;right:-2px;bottom:-2px;width:10px;height:10px;background:var(--ochre)}
+nav{display:flex;gap:34px;font-size:15px}
+nav a{opacity:.85}nav a:hover{opacity:1}
+.hero{position:relative;height:min(92vh,860px);min-height:600px;color:#fff;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,.05) 35%,rgba(0,0,0,.7) 100%)}
+.hero .wrap{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:64px}
+h1{font-size:clamp(44px,7vw,108px);font-weight:500;letter-spacing:-.05em;line-height:.95;max-width:1000px}
+.hrow{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-top:36px;flex-wrap:wrap}
+.hrow p{max-width:440px;font-size:18px;opacity:.9}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:50px;padding:0 26px;font-weight:500;font-size:15px;border-radius:2px;transition:.2s;white-space:nowrap}
+.btn.w{background:#fff;color:var(--ink)}.btn.w:hover{background:var(--ochre);color:#fff}
+.btn.k{background:var(--ink);color:#fff}.btn.k:hover{background:var(--ochre)}
+.btn.l{border:1px solid currentColor}
+.acts{display:flex;gap:10px;flex-wrap:wrap}
+section{padding:120px 0}
+.intro{display:grid;grid-template-columns:1fr 2fr;gap:60px}
+.intro .k{font-size:14px;color:var(--ink2);letter-spacing:.04em}
+.intro p.big{font-size:clamp(24px,2.6vw,36px);line-height:1.3;letter-spacing:-.025em;font-weight:500}
+.intro p.big span{color:var(--ink2)}
+.disc{display:grid;grid-template-columns:repeat(3,1fr);margin-top:80px;border-top:1px solid var(--ink)}
+.disc div{padding:28px 28px 0 0}
+.disc h3{font-size:24px;font-weight:500;letter-spacing:-.025em}
+.disc p{color:var(--ink2);margin-top:10px;font-size:16px;max-width:340px}
+.disc .n{font-size:13px;color:var(--ochre);font-weight:700;margin-bottom:22px;display:block}
+.work{background:var(--paper)}
+.whead{display:flex;justify-content:space-between;align-items:end;margin-bottom:46px;gap:20px;flex-wrap:wrap}
+h2{font-size:clamp(34px,4vw,60px);font-weight:500;letter-spacing:-.045em;line-height:1}
+.whead p{color:var(--ink2);max-width:380px;font-size:15px}
+.wgrid{display:grid;grid-template-columns:1.4fr 1fr;gap:28px}
+.p{display:block}
+.p .im{overflow:hidden;background:#d8d5cf}
+.p img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s}
+.p:hover img{transform:scale(1.03)}
+.p .cap{display:flex;justify-content:space-between;padding:16px 0 0;font-size:15px;gap:16px}
+.p .cap b{font-weight:500}
+.p .cap span{color:var(--ink2)}
+.p1 .im{aspect-ratio:4/3}.p2 .im{aspect-ratio:4/5.1}
+.p3{grid-column:1/-1}.p3 .im{aspect-ratio:21/8}
+.note{font-size:13px;color:var(--ink2);margin-top:26px}
+.proc{display:grid;grid-template-columns:1fr 1fr;gap:80px}
+.steps div{display:grid;grid-template-columns:60px 1fr;padding:24px 0;border-top:1px solid var(--line)}
+.steps div:last-child{border-bottom:1px solid var(--line)}
+.steps b{font-weight:500;font-size:14px;color:var(--ochre)}
+.steps h4{font-size:20px;font-weight:500;letter-spacing:-.02em}
+.steps p{color:var(--ink2);font-size:15px;margin-top:4px}
+blockquote{font-size:clamp(22px,2.2vw,30px);line-height:1.35;letter-spacing:-.02em;font-weight:500;margin-top:34px}
+cite{display:block;font-style:normal;font-size:14px;color:var(--ink2);margin-top:18px}
+.contact{background:var(--ink);color:#f1efe9}
+.contact h2{max-width:800px}
+.cgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:70px;padding-top:30px;border-top:1px solid #3a3936}
+.cgrid h5{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#a29f97;font-weight:500;margin-bottom:12px}
+.contact .acts{margin-top:40px}
+footer{background:var(--ink);color:#8d8a83;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;padding:26px 32px;border-top:1px solid #3a3936;flex-wrap:wrap;gap:10px}
+.mbar{display:none}
+@media(max-width:900px){
+ nav{display:none}
+ .hero{height:auto;min-height:0}
+ .hero .wrap{min-height:700px;padding-top:120px;padding-bottom:40px}
+ .hrow{margin-top:24px}
+ .hrow .acts{width:100%}
+ section{padding:72px 0}
+ .intro,.proc{grid-template-columns:1fr;gap:28px}
+ .disc{grid-template-columns:1fr;margin-top:48px;border-top:0}
+ .disc div{border-top:1px solid var(--ink);padding:24px 0 28px}
+ .wgrid{grid-template-columns:1fr}
+ .p2 .im{aspect-ratio:4/3}.p3 .im{aspect-ratio:4/3}
+ .cgrid{grid-template-columns:1fr;gap:26px;margin-top:44px}
+ footer{padding-bottom:80px}
+ .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;bottom:0;left:0;right:0;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:var(--bg);border-top:1px solid var(--line);z-index:20}
+}
+@media(max-width:420px){.wrap{padding:0 20px}h1{font-size:46px}footer .wrap{padding:22px 20px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+ <a class="logo" href="#"><span class="sq"></span>20 Square Design Studio</a>
+ <nav><a href="#studio">Studio</a><a href="#work">Work</a><a href="#process">Process</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<div class="hero">
+ <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=2000&q=75&auto=format&fit=crop" alt="Contemporary house with large glazing at dusk">
+ <div class="wrap">
+  <h1>We design it, we detail it, we build it.</h1>
+  <div class="hrow">
+   <p>Architecture, interiors and construction from New Palam Vihar, Gurugram, for homes and businesses across North India.</p>
+   <div class="acts"><a class="btn w" href="https://wa.me/918882318857?text=Hi%2C%20I%27d%20like%20to%20discuss%20a%20project%20with%2020%20Square%20Design%20Studio.">Discuss your plot</a><a class="btn l" href="tel:+918882318857">+91 88823 18857</a></div>
+  </div>
+ </div>
+</div>
+
+<section id="studio"><div class="wrap">
+ <div class="intro">
+  <span class="k">20 Square Design Studio<br>Rated 4.9 on Google · 40 reviews</span>
+  <p class="big">One team from the first sketch to the final coat of paint. <span>We listen to your ideas, plan around Vastu and how you'll actually live, and show you every room in 3D before a brick is laid.</span></p>
+ </div>
+ <div class="disc">
+  <div><span class="n">01</span><h3>Architecture</h3><p>House planning, elevations and building design, from compact residential plots to commercial buildings.</p></div>
+  <div><span class="n">02</span><h3>Interiors</h3><p>Interiors resolved together with the architecture, so the house and the rooms are designed as one.</p></div>
+  <div><span class="n">03</span><h3>Construction</h3><p>Project management and execution, with every trade coordinated from start to finish.</p></div>
+ </div>
+</div></section>
+
+<section id="work" class="work"><div class="wrap">
+ <div class="whead"><h2>Selected work</h2><p>Residential, commercial, institutional and retail projects across North India.</p></div>
+ <div class="wgrid">
+  <a class="p p1" href="#contact"><div class="im"><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1400&q=75&auto=format&fit=crop" alt="Residential project placeholder"></div><div class="cap"><b>Residence, Sector 23</b><span>Gurgaon · Residential</span></div></a>
+  <a class="p p2" href="#contact"><div class="im"><img src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=1000&q=75&auto=format&fit=crop" alt="Stair interior placeholder"></div><div class="cap"><b>125 sq yd plot</b><span>New Palam Vihar · Planning + 3D</span></div></a>
+  <a class="p p3" href="#contact"><div class="im"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=2000&q=75&auto=format&fit=crop" alt="Interior project placeholder"></div><div class="cap"><b>Commercial project</b><span>Design + project management</span></div></a>
+ </div>
+ <p class="note">Images are placeholders. Your own project photographs would go here.</p>
+</div></section>
+
+<section id="process"><div class="wrap proc">
+ <div>
+  <h2>How a project runs</h2>
+  <blockquote>"They catered all our requirements very artistically and logically according to Vastu… and showed us each and every space with a 3D walk-through video."</blockquote>
+  <cite>Client, New Palam Vihar · Google review</cite>
+ </div>
+ <div class="steps">
+  <div><b>01</b><span><h4>Listen</h4><p>Even if you only have faded ideas, we note everything down properly.</p></span></div>
+  <div><b>02</b><span><h4>Plan</h4><p>Layouts that respect Vastu, sunlight and your plot's real constraints.</p></span></div>
+  <div><b>03</b><span><h4>Visualise</h4><p>Exterior views and a 3D walkthrough of every space.</p></span></div>
+  <div><b>04</b><span><h4>Build</h4><p>Execution and coordination through to handover.</p></span></div>
+ </div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+ <h2>Have a plot or a space? Let's talk it through.</h2>
+ <div class="acts"><a class="btn w" href="https://wa.me/918882318857">WhatsApp the studio</a><a class="btn l" href="mailto:20squaredesignstudio@gmail.com">Email us</a></div>
+ <div class="cgrid">
+  <div><h5>Studio</h5><p>A-14, Phase 2, New Palam Vihar, Sector 110, Gurugram 122017</p></div>
+  <div><h5>Hours</h5><p>Mon – Sat, 9 AM – 7 PM<br>Sunday closed</p></div>
+  <div><h5>Contact</h5><p><a href="tel:+918882318857">+91 88823 18857</a><br><a href="mailto:20squaredesignstudio@gmail.com">20squaredesignstudio@gmail.com</a></p></div>
+ </div>
+</div></section>
+<footer><div class="wrap"><span>© 20 Square Design Studio, Gurugram</span><span>Demo concept by <a href="https://zykken.com" style="text-decoration:underline">Zykken</a></span></div></footer>
+<div class="mbar"><a class="btn l" href="tel:+918882318857">Call</a><a class="btn k" href="https://wa.me/918882318857">WhatsApp</a></div>
+</body></html>
